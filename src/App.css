@@ -1,0 +1,12 @@
+/* src/App.css */
+.app {
+  display: flex;
+}
+
+/* Fixed the issue */
+.content {
+  flex: 1;
+  padding: 20px;
+  height: 100vh;
+  background-color: rgb(109, 109, 109);
+}

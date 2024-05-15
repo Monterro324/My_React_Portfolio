@@ -1,0 +1,49 @@
+/* Animation keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Styling for elements in the Home component */
+  .home {
+    height: auto;
+    text-align: center;
+    padding: 75px;
+    color: #333; /* Dark grey text */
+    border: 10px solid #0056b3; /* Border for the columns */
+    border-radius: 10px; /* Rounded corners */
+    background: white;
+  }
+  
+  .home h1 {
+    animation: fadeIn 1s ease-out forwards;
+    color: #0056b3; /* A shade of blue */
+    margin-bottom: 10px;
+  }
+  
+  .home p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000; /* Lighter grey text */
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
+  .avatar {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* Circle shape */
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out forwards;
+  }
+
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+    .avatar {
+      width: 100px; /* Smaller avatar on mobile */
+    }
+  
+    .home {
+      padding: 10px;
+    }
+  }
+  

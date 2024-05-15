@@ -1,0 +1,72 @@
+/* Projects.css */
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+  
+  .project-column {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border: 10px solid #0056b3; /* Blue border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(54, 54, 54, 0.1); /* Shadow for the podium effect */
+    height: 500px; /* Adding a fixed height */
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
+  /* Need to fix the images! */
+  /* Change the width and height to make it fixed */
+  .project-image {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .project-column h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
+  .project-column p {
+    font-size: 16px;
+    color: #333;
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .project-column {
+      max-width: 100%;
+    }
+  }
+  
+  

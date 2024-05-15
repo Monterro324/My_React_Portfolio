@@ -1,0 +1,35 @@
+/* src/components/Navbar/Navbar.css */
+.navbar {
+    /* This was the whole ENTIRE PROBLEMMMMM RAHHHHHH */
+    /* Finally fixed the issue of the white space when scrolling down on the About page */
+    /* Lowkey hate styling */
+    /* height: 100vh; */
+    width: 100px; /* Adjusted width to make the navbar smaller */
+    background-color: #000000;
+    padding: 10px; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center align items to handle smaller width better */
+}
+
+.navbar a {
+    padding: 8px; /* Adjusted padding */
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Default text color */
+    display: flex;
+    align-items: center; /* Vertically align text and icons */
+    width: 100%; /* Full width to enhance click area */
+}
+
+.navbar a .icon {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+
+/* This will apply styles to both the text and the icon when the NavLink is active */
+.navbar a.active, .navbar a.active .icon {
+    color: rgb(238, 255, 0); /* Active link color */
+    font-weight: bold; /* Make the font bold when active */
+}
+

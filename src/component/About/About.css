@@ -1,0 +1,107 @@
+/* About.css */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+ 
+.about-container {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: center; /*Adjust spacing as needed*/
+    padding: 20px;
+    overflow: hidden;
+    background-color: rgb(109, 109, 109);
+    /* overflow-y: auto; */
+  }
+  
+  /* Simple fix, just apply the fadeIN to the left and right coloum for all of it to fade into the screen */
+  /* Much easier, rather than applying it to paragraphs, headings, etc. */
+.left-column, .right-column {
+  flex: 1; /* Each column takes equal space */
+  padding: 20px;
+  text-align: left;
+  max-width: 600px;
+  background: rgb(255, 255, 255); /* Column background color */
+  border: 10px solid #0056b3; /* Border for the columns */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(54, 54, 54, 0.1); /* Shadow for the podium effect */
+  margin: 20px; /* Space around columns */
+  animation: fadeIn 2s ease-out forwards;
+  }
+
+.right-column p{
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+
+.left-column .about-image {
+    width: 100%;  /* Makes the image responsive, adjusting to the column width */
+    height: auto;  /* Maintains the aspect ratio of the image */
+    margin-top: 20px;  /* Adds some space between the text and the image */
+}
+
+.left-column p{
+    font-size: 15px;
+    color: #000000; 
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.right-column .about-image-container {
+    background-color: white; /* Change this to match your webpage background */
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+}
+
+.right-column .about-image {
+    width: 100%;  /* Makes the image responsive, adjusting to the column width */
+    max-width: 200px; /* Limits the width of the image */
+    max-height: 300px; /* Limits the height of the image */
+    height: auto;  
+    margin-top: 20px;  
+
+}
+
+
+/* Creating the container for the division */
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Used to build the arrow */
+/* Reference to this */
+/* https://www.tutorialspoint.com/css/css_arrows.htm */
+.down-arrow {
+  display: inline-block;
+  margin: 30px;
+  width: 15px;
+  height: 15px;
+  border-top: 4px solid #0056b3;
+  border-left: 4px solid #0056b3;
+  transform: rotate(-135deg);
+  transform-origin: center;
+}
+
+.down-arrow::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 45px;
+  background-color: #0056b3;
+  transform: rotate(-45deg) translate(15px, 4px);
+}
+  
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+  }
+  
