@@ -46,6 +46,13 @@
     border-radius: 15px;
     object-fit: contain;
     margin-bottom: 0 auto;
+    transition: transform 0.3s ease;
+  }
+
+  /* Hovering effect for images */
+  .project-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
   }
   
   .project-column h2 {
