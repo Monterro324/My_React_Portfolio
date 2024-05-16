@@ -11,7 +11,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router basename="My_React_Portfolio">
+    <Router>
       <div className="app">
         <Navbar />
         <div className="content">
@@ -22,7 +22,7 @@ const App = () => {
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} /> 
             <Route path="/contact" element={<Contact />} />
-            {/* <Route path="/" element={<Navigate to="/home" replace />} /> */}
+            <Route path="/" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>
       </div>

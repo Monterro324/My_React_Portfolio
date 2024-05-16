@@ -15,6 +15,7 @@ const Navbar = () => {
       <NavLink to="/" className={({ isActive }) => isActive ? 'active' : undefined}>
         <FontAwesomeIcon icon={faHome} className="icon" /> Home
       </NavLink>
+
       <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : undefined}>
         <FontAwesomeIcon icon={faUser} className="icon" /> About
       </NavLink>

@@ -12,7 +12,7 @@ const Navbar = () => {
     // Adding Navbar
     //Use FontAwsomeIcon for the icons on the navbar
     <div className="navbar">
-      <NavLink to="/" className={({ isActive }) => isActive ? 'active' : undefined}>
+      <NavLink to="/" exact className={({ isActive }) => isActive ? 'active' : undefined}>
         <FontAwesomeIcon icon={faHome} className="icon" /> Home
       </NavLink>
       <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : undefined}>

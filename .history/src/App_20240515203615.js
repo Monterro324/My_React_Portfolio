@@ -11,7 +11,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <Router basename="My_React_Portfolio">
+    <Router basename="">
       <div className="app">
         <Navbar />
         <div className="content">
