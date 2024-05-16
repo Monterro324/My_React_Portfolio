@@ -20,7 +20,10 @@
   }
   
   .project-column {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    /* Fixes the centering of the image and text*/
     padding: 20px;
     text-align: center;
     background: white;
@@ -38,11 +41,11 @@
   /* Need to fix the images! */
   /* Change the width and height to make it fixed */
   .project-image {
-    width: 200px;
-    height: 300px;
+    max-width: 150px;
+    max-height: 250px;
     border-radius: 15px;
-    object-fit: cover;
-    margin-bottom: 10px;
+    object-fit: contain;
+    margin-bottom: 0 auto;
   }
   
   .project-column h2 {
