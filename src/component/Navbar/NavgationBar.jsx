@@ -24,7 +24,8 @@ const Navbar = () => {
       <NavLink to="/projects" className={({ isActive }) => (isActive ? 'active' : undefined)}> 
         <FontAwesomeIcon icon={faProjectDiagram} className="icon" /> Projects
       </NavLink>
-      <NavLink to="/contacts" className={({ isActive }) => (isActive ? 'active' : undefined)}> 
+      {/* Remember to check what you name THEM lol, was taking hours trying to figure out why it didn't pop up */}
+      <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : undefined)}> 
         <FontAwesomeIcon icon={faEnvelope} className="icon" /> Contact
       </NavLink>
     </div>

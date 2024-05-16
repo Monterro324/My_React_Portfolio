@@ -36,6 +36,7 @@
     text-align: center;
     font-weight: bold;
     margin: 5px 0;
+    animation: fadeIn 2s ease-out forwards; 
   }
 
 .left-column .about-image {
@@ -63,7 +64,7 @@
     max-height: 300px; /* Limits the height of the image */
     height: auto;  
     margin-top: 20px;  
-
+    animation: fadeIn 2s ease-out forwards; 
 }
 
 
